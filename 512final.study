@@ -1,0 +1,115 @@
+Chapter 7 - Type Systems
+Basic idea of a type
+Hardware based types
+Strongly typed languages
+Weakly typed languages
+Polymorphism in type systems
+Orthogonality -- how can types be mixed
+Initialization, aggregates
+Standard types -- characters, integers, floating, boolean
+Other "built-in" types -- strings, complex, rational, ...
+Enumeration types
+Refinement types
+Variable size integer types
+Chapter 8 - Composite Types
+Records/Structs
+Variant Records/Unions
+Arrays, multi-dimensional arrays, operations
+Allocation, dope vectors, indexing
+Row Major vs Column Major, index formulas
+Sets
+Pointers and Recursive Types, including Lists
+Dynamic Memory flavors, explicit allocation, garbage collection
+Statically typed vs Dynamic typed
+Type equivalence in statically typed, structural, name, declaration
+Issues in strong type systems, aliases, ...
+Opaque types
+Type checking in the compiler
+Type casting
+Universal type
+Overloading, generic systems, types a parameters
+Generic types, template types, ...
+l-value vs r-value expressions
+Chapter 9 - Subroutines and Control Abstraction
+Subroutines -- generic name of procedures, functions, methods, ...
+Typical stack layout of subroutines
+Caller -- call sequence: arguments, hidden args, static link, ...
+Callee: Prologue -- creates activation record
+Callee: Epilogue -- cleans up and returns with necessary information
+Optimizations: leaf routines may not need full activation record
+Display Vs Static chains
+Parameter passing
+Various syntaxes
+Call by value
+Call by reference
+Call by sharing
+Call by value, result
+Call by name (Algol 60)
+Various languages: Pascal by value unless specified
+C is always by value
+Ada: in, out, in out
+Aliases in C++
+Returning a reference (C++ and others)
+Idea of a Delegate (Objective-C, Swift, C#)
+Default parameters -- evaluation environment or just constants
+Function return values, syntaxes
+Errors in subroutines, gotos
+Exceptions: try/catch/throw/raise/...
+Languages without exceptions: C-setjmp/longjmp, Ruby--continuation
+Coroutines -- basic concepts
+Event based programming
+Chapter 10 - Object Orientation
+History of objects -- records/structs and subprograms together
+Modules -- separate compilation, some visibility control
+Encapsulation, inheritance, dynamic method binding -- first in Simula
+Smalltalk first totally object oriented language
+Object concept ... data and methods
+Classes -- implementation of object concept
+Visibility: public, private, protected for data and methods
+Constructors / Destructors
+Inheritance: public, private, protected
+Method overriding
+Generic Classes/Objects
+Hidden parameter to methods: self/this/...
+Static methods and fields
+Multiple constructors
+Copy constructor: shallow copy vs deep copy
+Dynamic Method binding, with method overriding
+Multiple inheritance
+Core ideas: encapsulation and visibility, inheritance, dynamic method binding
+Chapter 11 - Functional Languages
+Theory to Programming languages
+Turing to imperative languages
+Church to functional languages
+Church: lambda calculus
+Functional programming (pure) -- functions with no side effects, no mutable state
+Necessary features: 1st class and higher-order functions, polymorphism, ...
+Recursion is primary method of repetition
+Tail Recursion can be done iteratively
+Higher order functions: function as argument or a return value
+Some functional languages included mutable state and side effects
+Use of lists in functional languages
+A bit of Scheme
+A bit of OCaml
+Scheme is basically Cambridge Polish
+OCaml is infix
+Applicative order vs Normal order
+Implementation of higher order functions
+Chapter 12 - Logic Languages
+Basics of logic programming
+predicates
+Operators: conjunction, disjunction, negation, implication
+"Statements": axioms, theorems, hypotheses
+Horn clauses
+Atoms / Numbers
+Fact clause
+Query clause
+Rule clause
+A bit of Prolog
+atoms and facts: rainy(seattle). parent(mary,fred). ...
+Prolog rules: e.g. name(args) :- clauses.
+Variables start with upper case, atoms start with lower case
+Facts appear to have to be in a file, [filename]. to read them
+Left to right evaluation of terms in the clauses
+Basic idea of evaluating a term, may include backtracking
+= vs is in prolog
